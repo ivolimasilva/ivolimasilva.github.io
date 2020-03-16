@@ -3,6 +3,7 @@
 .text {
     max-width: 95rem;
     margin-top: 2rem;
+    margin-right: 0;
     margin-left: 0;
 
     & > p {
@@ -23,5 +24,13 @@
 
     .text {
         text-align: center;
+
+        & > p {
+            display: inline;
+
+            &:not(:first-child) {
+                margin-left: 0.5rem;
+            }
+        }
     }
 }

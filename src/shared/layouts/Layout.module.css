@@ -12,3 +12,9 @@
         padding: 0 3rem;
     }
 }
+
+@media (--layout-xsmall) {
+    .main {
+        padding: 0 1.5rem;
+    }
+}
