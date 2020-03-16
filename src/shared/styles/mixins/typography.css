@@ -1,0 +1,76 @@
+@import "..";
+
+/* ==========================================================================
+    All typography variants
+    ========================================================================== */
+
+@define-mixin typography-h1 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+}
+
+@define-mixin typography-h2 {
+    opacity: 0.55;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight-regular);
+}
+
+@define-mixin typography-h3 {
+    opacity: 0.535;
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+
+@define-mixin typography-h4 {
+    opacity: 0.855;
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+}
+
+@define-mixin typography-h5 {
+    opacity: 0.65;
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.3;
+}
+
+@define-mixin typography-p {
+    opacity: 0.55;
+    font-size: 1.6rem;
+    line-height: 1.4em;
+}
+
+@define-mixin typography-a {
+    opacity: 0.55;
+    color: currentColor;
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    transition: opacity var(--duration-standard) ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 0.65;
+        cursor: pointer;
+    }
+}
+
+@define-mixin typography-tag {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-regular);
+}
+
+@define-mixin typography-quote {
+    margin: 0;
+    opacity: 0.65;
+    font-size: 3.2rem;
+    font-weight: var(--font-weight-light);
+    line-height: 1.5em;
+
+    @media (--layout-small) {
+        font-size: 1.7rem;
+    }
+}

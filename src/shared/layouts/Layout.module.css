@@ -1,0 +1,14 @@
+@import "../styles";
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/* 75em = 120rem = max-width-layout */
+@media (width <= 75em) {
+    .main {
+        padding: 0 3rem;
+    }
+}
