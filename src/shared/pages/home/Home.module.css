@@ -1,0 +1,11 @@
+@import "../../styles";
+
+.section {
+    margin-top: 15rem;
+}
+
+@media (--layout-xsmall) {
+    .section {
+        margin-top: 10rem;
+    }
+}
