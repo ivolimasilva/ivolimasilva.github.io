@@ -15,14 +15,14 @@ body {
     font-family: "Roboto", sans-serif; /* stylelint-disable-line scale-unlimited/declaration-strict-value */
     overflow-wrap: break-word;  /* Break long words by default */
     -webkit-tap-highlight-color: transparent;  /* Do not show a highlight (rectangle around the link) while tapping it */
+}
 
-    &[data-theme="light"] {
-        color: var(--color-black);
-    }
+@mixin theme-light {
+    color: var(--color-black);
+}
 
-    &[data-theme="dark"] {
-        color: var(--color-white);
-    }
+@mixin theme-dark {
+    color: var(--color-white);
 }
 
 /* ==========================================================================

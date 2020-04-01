@@ -1,5 +1,7 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import classNames from 'classnames';
+
+import useSystemTheme from 'react-use-system-theme';
 
 import SunIcon from '../sun-icon';
 import MoonIcon from '../moon-icon';
@@ -12,15 +14,21 @@ const THEMES = {
 };
 
 export const ThemeSwapper = () => {
-    const [theme, setTheme] = useState(THEMES.LIGHT);
-
-    const handleClick = useCallback(() => {
-        setTheme((currentTheme) => currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK);
-    }, []);
+    const systemTheme = useSystemTheme(THEMES.LIGHT);
 
     useEffect(() => {
-        document.body.setAttribute('data-theme', theme);
-    }, [theme]);
+        if (document.body.getAttribute('data-theme') === systemTheme) {
+            document.body.removeAttribute('data-theme');
+        }
+    }, [systemTheme]);
+
+    const handleClick = useCallback(() => {
+        if (!document.body.getAttribute('data-theme')) {
+            document.body.setAttribute('data-theme', systemTheme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT);
+        } else {
+            document.body.removeAttribute('data-theme');
+        }
+    }, [systemTheme]);
 
     return (
         <button onClick={ handleClick } className={ styles.container }>
