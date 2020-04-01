@@ -1,7 +1,7 @@
 @import "../../styles";
 
 :root {
-    --size: 1.6rem;
+    --size: 1.6em;
 }
 
 .container {
@@ -30,7 +30,7 @@
         transform var(--duration-long) ease-in-out;
 }
 
-:global([data-theme="light"]) {
+@mixin theme-light {
     & .icon {
         color: var(--color-black);
     }
@@ -41,7 +41,7 @@
     }
 }
 
-:global([data-theme="dark"]) {
+@mixin theme-dark {
     & .icon {
         color: var(--color-white);
     }

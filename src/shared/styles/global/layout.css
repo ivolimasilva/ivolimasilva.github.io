@@ -36,14 +36,14 @@ body {
     flex: 1 0 auto;
     flex-direction: column;
     transition: background-color var(--duration-long) ease-in-out;
+}
 
-    &[data-theme="light"] {
-        background-color: var(--background-color-light);
-    }
+@mixin theme-light {
+    background-color: var(--background-color-light);
+}
 
-    &[data-theme="dark"] {
-        background-color: var(--background-color-dark);
-    }
+@mixin theme-dark {
+    background-color: var(--background-color-dark);
 }
 
 #___gatsby,
