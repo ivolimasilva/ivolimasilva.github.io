@@ -7,7 +7,13 @@ export const formatDates = (start, end) => {
     const endMonth = Intl.DateTimeFormat('en-US', { month: 'short' }).format(end); /* eslint-disable-line babel/new-cap */
     const endYear = end.getFullYear();
 
-    result = `${startMonth} ${startYear} - ${endMonth} ${endYear} (`;
+    const now = new Date();
+
+    if (endYear === now.getFullYear() && end.getMonth() === now.getMonth()) {
+        result = `${startMonth} ${startYear} - current (`;
+    } else {
+        result = `${startMonth} ${startYear} - ${endMonth} ${endYear} (`;
+    }
 
     const diff = new Date(end.getTime() - start.getTime());
     const diffYears = diff.getFullYear() - new Date(0).getFullYear();
@@ -23,6 +29,10 @@ export const formatDates = (start, end) => {
 
     if (diffMonths) {
         result += `${diffMonths} months`;
+    }
+
+    if (!diffYears && !diffMonths) {
+        result += 'I just started! 🎉';
     }
 
     result += ')';

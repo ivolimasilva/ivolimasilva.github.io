@@ -58,6 +58,7 @@
     animation: bounce 1500ms ease-in-out infinite alternate;
 
     &:not(:first-of-type) {
+        animation-duration: 2000ms;
         animation-delay: 500ms;
     }
 }
