@@ -11,6 +11,8 @@ export default [
                 description: [
                     'For my dissertation, I developed a tool that calculated the current popularity of a social networks\' hashtag and predicted how its popularity would evolve',
                 ],
+                startDate: new Date('September 10, 2012'),
+                endDate: new Date('January 22, 2018'),
             },
         ],
     },

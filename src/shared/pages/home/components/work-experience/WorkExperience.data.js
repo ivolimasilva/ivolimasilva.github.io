@@ -63,7 +63,38 @@ const testflight = {
     url: 'https://developer.apple.com/testflight/',
 };
 
+const mobx = {
+    name: 'MobX',
+    url: 'https://mobx.js.org/',
+};
+
+const graphql = {
+    name: 'GraphQL',
+    url: 'https://graphql.org/',
+};
+
+const apollo = {
+    name: 'Apollo',
+    url: 'https://www.apollographql.com/',
+};
+
 export default [
+    {
+        organization: 'Dashdash',
+        url: 'https://dashdash.com/',
+        location: 'Porto',
+        entries: [
+            {
+                title: 'Frontend Developer',
+                description: [
+                    'Building a platform that provides general purpose computing to the masses',
+                ],
+                stack: [reactjs, mobx, graphql, apollo, jest, enzyme],
+                startDate: new Date('May 11, 2020'),
+                endDate: new Date(),
+            },
+        ],
+    },
     {
         organization: 'MOXY.studio',
         url: 'https://moxy.studio/',

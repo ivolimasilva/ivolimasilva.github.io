@@ -1,5 +1,6 @@
 export * from './avatar';
 export * from './block';
+export * from './duration';
 export * from './footer';
 export * from './header';
 export * from './moon-icon';

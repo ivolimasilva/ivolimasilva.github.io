@@ -2,8 +2,9 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import Tag from '../tag';
+import Duration from '../duration';
 
-import { convertToKey, formatDates } from '../../utils';
+import { convertToKey } from '../../utils';
 
 import styles from './Block.module.css';
 
@@ -37,8 +38,7 @@ export const Block = ({ title, data, className }) => (
                                     </a>
                                 )) }</p> }
                         </div>
-                        { startDate && endDate &&
-                            <p className={ styles.dates }>{ formatDates(startDate, endDate) }</p> }
+                        <Duration start={ startDate } end={ endDate } />
                     </Fragment>
                 )) }
             </section>
@@ -63,8 +63,8 @@ Block.propTypes = {
                             url: PropTypes.string.isRequired,
                         }).isRequired,
                     ),
-                    startDate: PropTypes.instanceOf(Date),
-                    endDate: PropTypes.instanceOf(Date),
+                    startDate: PropTypes.instanceOf(Date).isRequired,
+                    endDate: PropTypes.instanceOf(Date).isRequired,
                 }).isRequired,
             ).isRequired,
         }).isRequired,
