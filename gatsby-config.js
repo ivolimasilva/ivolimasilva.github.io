@@ -18,7 +18,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                name: 'Ivo Lima Silva • Full-Stack Developer 💻',
+                name: 'Ivo Lima da Silva • Full-Stack Developer 💻',
                 short_name: 'Ivo Lima Silva',
                 start_url: '/',
                 icon: 'src/shared/media/images/favicon.png',
