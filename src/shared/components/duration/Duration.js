@@ -5,17 +5,13 @@ import { formatDates } from '../../utils';
 
 import styles from './Duration.module.css';
 
-export const Duration = ({ start, end }) => {
-    console.log('Duration', start, end);
-
-    return (
-        <p className={ styles.dates }>{ formatDates(start, end) }</p>
-    );
-};
+export const Duration = ({ start, end }) => (
+    <p className={ styles.dates }>{ formatDates(start, end) }</p>
+);
 
 Duration.propTypes = {
     start: PropTypes.instanceOf(Date).isRequired,
-    end: PropTypes.instanceOf(Date).isRequired,
+    end: PropTypes.instanceOf(Date),
 };
 
 export default Duration;
