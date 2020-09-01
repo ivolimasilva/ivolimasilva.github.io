@@ -64,7 +64,7 @@ Block.propTypes = {
                         }).isRequired,
                     ),
                     startDate: PropTypes.instanceOf(Date).isRequired,
-                    endDate: PropTypes.instanceOf(Date).isRequired,
+                    endDate: PropTypes.instanceOf(Date),
                 }).isRequired,
             ).isRequired,
         }).isRequired,

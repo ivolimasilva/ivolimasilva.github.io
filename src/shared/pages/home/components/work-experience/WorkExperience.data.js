@@ -91,7 +91,6 @@ export default [
                 ],
                 stack: [reactjs, mobx, graphql, apollo, jest, enzyme],
                 startDate: new Date('May 11, 2020'),
-                endDate: new Date(),
             },
         ],
     },
