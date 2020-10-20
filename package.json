@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/ivolimasilva/ivolimasilva.github.io/issues"
   },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop -H 0.0.0.0",
