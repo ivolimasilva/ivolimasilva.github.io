@@ -4,7 +4,7 @@
 module.exports = {
     siteMetadata: {
         title: 'Ivo Lima Silva • Full-Stack Developer 💻',
-        description: 'Full-Stack Developer based in Porto, Portugal. Former Technical Lead Developer at MOXY.studio. Lifelong learner pursuing a career in Product Development. Interested in 3D, Photography, UI/UX and Programming.',
+        description: 'Frontend Developer at Rows. Lifelong learner pursuing a career in Product Development. Interested in 3D, Photography, UI/UX and Programming.',
         author: '@ivolimasilva_',
     },
     plugins: [

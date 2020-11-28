@@ -80,8 +80,8 @@ const apollo = {
 
 export default [
     {
-        organization: 'Dashdash',
-        url: 'https://dashdash.com/',
+        organization: 'Rows (previously Dashdash)',
+        url: 'https://rows.com/',
         location: 'Porto',
         entries: [
             {

@@ -1,8 +1,4 @@
 {
-    "{src}/**/*.js": [
-        "eslint"
-    ],
-    "{src}/**/*.css": [
-        "stylelint"
-    ]
+    "*.js": "eslint",
+    "*.css": "stylelint"
 }
