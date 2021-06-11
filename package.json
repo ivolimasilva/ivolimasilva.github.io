@@ -1,13 +1,12 @@
 {
   "name": "ivolimasilva-www",
-  "private": true,
   "description": "Ivo Lima Silva's personal website",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Ivo Lima Silva",
     "email": "ivolimasilva@outlook.com",
-    "url": "http://ivolimasilva.xyz"
+    "url": "https://ivolimasilva.xyz"
   },
   "repository": {
     "type": "git",
@@ -20,43 +19,36 @@
     "npm": ">=7.0.0"
   },
   "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop -H 0.0.0.0",
-    "start": "gatsby serve",
-    "clean": "gatsby clean",
-    "lint": "npm run lint:eslint && npm run lint:stylelint",
-    "lint:eslint": "eslint --ignore-path .gitignore .",
-    "lint:stylelint": "stylelint --ignore-path .gitignore \"**/*.css\"",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "browserslist": [
-    "extends browserslist-config-google/modern"
-  ],
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.27.4",
-    "gatsby-plugin-layout": "^1.5.0",
-    "gatsby-plugin-manifest": "^2.7.0",
-    "gatsby-plugin-postcss": "^3.2.0",
+    "file-loader": "^6.2.0",
+    "next": "^10.2.3",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.1.10",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-use-system-theme": "^1.1.1",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@moxy/eslint-config": "^10.1.1",
-    "@moxy/postcss-preset": "^4.5.1",
-    "@moxy/stylelint-config": "^8.1.0",
-    "browserslist-config-google": "^2.0.0",
-    "eslint": "^7.14.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.5.2",
-    "stylelint": "^13.8.0"
+    "@moxy/eslint-config-babel": "^13.0.3",
+    "@moxy/eslint-config-base": "^13.0.3",
+    "@moxy/eslint-config-react": "^13.0.3",
+    "@moxy/eslint-config-react-web-a11y": "^13.0.3",
+    "@moxy/postcss-preset": "^4.6.0",
+    "@moxy/stylelint-config": "^9.0.0",
+    "@types/react": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-mixins": "^8.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "stylelint": "^13.13.1",
+    "typescript": "^4.3.2"
   }
 }

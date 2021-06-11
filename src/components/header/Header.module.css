@@ -1,0 +1,57 @@
+@import "../../styles/index.css";
+
+:root {
+	--padding-vertical: 15rem;
+}
+
+.container {
+	padding: var(--padding-vertical) 0;
+	display: flex;
+}
+
+.navigation {
+	margin-left: auto;
+	display: flex;
+	align-self: center;
+
+	& > *:not(:last-child) {
+		margin-right: 2.5rem;
+	}
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+
+/* 75em = 120rem = max-width-layout */
+@media (width <= 75em) {
+	.container {
+		padding: var(--padding-vertical) 3rem;
+	}
+}
+
+@media (--layout-small) {
+	:root {
+		--padding-vertical: 5rem;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.navigation {
+		margin: 2rem auto 0;
+
+		& > *:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+}
+
+@media (--layout-xsmall) {
+	.link {
+		font-size: 1.3rem;
+	}
+}

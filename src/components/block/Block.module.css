@@ -1,0 +1,54 @@
+@import "../../styles/index.css";
+
+.entry {
+	margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
+
+	&:first-of-type {
+		margin-top: 3.5rem;
+	}
+}
+
+.heading {
+	display: flex;
+}
+
+.companyLink {
+	display: flex;
+	align-items: center;
+}
+
+.tag {
+	margin-left: 1.8rem;
+}
+
+.title {
+	margin-top: 2rem;
+	font-weight: var(--font-weight-bolder);
+
+	&:not(:first-of-type) {
+		margin-top: 3rem;
+	}
+}
+
+.description {
+	margin-top: 2rem;
+}
+
+.phrase {
+	max-width: 75rem;
+
+	&:not(:first-child) {
+		margin-top: 1rem;
+	}
+}
+
+.stack {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+}
+
+.link {
+	margin-left: 0.5rem;
+}

@@ -1,16 +1,26 @@
 {
-    "root": true,
-    "extends": [
-        "@moxy/eslint-config/es9",
-        "@moxy/eslint-config/addons/babel-parser",
-        "@moxy/eslint-config/addons/browser",
-        "@moxy/eslint-config/addons/node",
-        "@moxy/eslint-config/addons/es-modules",
-        "@moxy/eslint-config/addons/jest",
-        "@moxy/eslint-config/addons/react"
-    ],
-    "rules": {
-        "react/jsx-fragments": 0,
-        "react/jsx-pascal-case": 0
-    }
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"env": {
+		"browser": true,
+    "node": true
+	},
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"@moxy/eslint-config-base/esm",
+		"@moxy/eslint-config-react",
+		"@moxy/eslint-config-react-web-a11y"
+	],
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"indent": ["error", "tab"],
+		"no-tabs": "off",
+		"no-undef": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+		"react/jsx-fragments": [2, "element"],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+		"react/react-in-jsx-scope": "off"
+	}
 }

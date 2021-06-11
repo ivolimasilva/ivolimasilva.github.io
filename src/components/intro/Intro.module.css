@@ -1,0 +1,36 @@
+@import "../../styles/index.css";
+
+.text {
+	max-width: 95rem;
+	margin-top: 2rem;
+	margin-right: 0;
+	margin-left: 0;
+
+	& > p {
+		@mixin typography-quote;
+	}
+}
+
+.link {
+	@mixin typography-quote;
+
+	opacity: 0.85;
+}
+
+@media (--layout-small) {
+	.tag {
+		align-self: center;
+	}
+
+	.text {
+		text-align: center;
+
+		& > p {
+			display: inline;
+
+			&:not(:first-child) {
+				margin-left: 0.5rem;
+			}
+		}
+	}
+}

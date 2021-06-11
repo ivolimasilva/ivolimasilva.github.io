@@ -1,0 +1,15 @@
+.section {
+  margin-top: 15rem;
+}
+
+@media (--layout-small) {
+  .section {
+	margin-top: 10rem;
+  }
+}
+
+@media (--layout-xsmall) {
+  .section {
+	margin-top: 6rem;
+  }
+}
