@@ -44,7 +44,7 @@
   ========================================================================== */
 
 :root {
-  --max-width-layout: 120rem;
+  --max-width-layout: min(120rem, 90vw);
   --background-color-light: var(--color-white);
   --background-color-dark: var(--color-dark);
 }
