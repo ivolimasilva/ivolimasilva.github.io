@@ -1,0 +1,4 @@
+{
+  "*.(js|ts)x": ["eslint", "tsc --noEmit"],
+  "*.css": "stylelint"
+}

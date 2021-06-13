@@ -21,7 +21,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -35,6 +36,7 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^12.1.4",
     "@moxy/eslint-config-babel": "^13.0.3",
     "@moxy/eslint-config-base": "^13.0.3",
     "@moxy/eslint-config-react": "^13.0.3",
@@ -44,7 +46,10 @@
     "@types/react": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "@typescript-eslint/parser": "^4.26.1",
+    "commitlint": "^12.1.4",
     "eslint": "^7.28.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-mixins": "^8.1.0",
     "postcss-preset-env": "^6.7.0",
