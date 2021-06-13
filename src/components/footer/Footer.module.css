@@ -1,3 +1,5 @@
+@import "../../styles/index.css";
+
 :root {
 	--padding-vertical: 15rem;
 	--size-rocket: 9.6rem;
