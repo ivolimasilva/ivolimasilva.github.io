@@ -6,8 +6,9 @@ module.exports = (phase, nextConfig) => ({
 		const { dev, isServer } = options;
 		const { assetPrefix = '' } = nextConfig;
 
+		// Static files
 		config.module.rules.push({
-			test: /\.(png|jpg|jpeg|gif|webp|ico)$/,
+			test: /\.(png|jpg|jpeg|gif|webp|ico|svg)$/,
 			loader: require.resolve('url-loader'),
 			options: {
 				limit: 0,
