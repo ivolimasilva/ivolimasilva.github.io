@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, useRef } from 'react';
 import classNames from 'classnames';
 
 import useSystemTheme from 'react-use-system-theme';
@@ -14,7 +14,18 @@ const THEMES = {
 };
 
 export const ThemeSwapper = () => {
+	const buttonRef = useRef<HTMLButtonElement>();
 	const systemTheme = useSystemTheme(THEMES.LIGHT);
+
+	const setButtonLabel = (theme: string) => buttonRef.current.setAttribute('aria-label', `Change theme to ${theme}`);
+
+	useEffect(() => {
+		const currentTheme = !document.body.getAttribute('data-theme') ?
+			systemTheme :
+			document.body.getAttribute('data-theme');
+
+		setButtonLabel(currentTheme);
+	}, [systemTheme]);
 
 	useEffect(() => {
 		if (document.body.getAttribute('data-theme') === systemTheme) {
@@ -24,16 +35,20 @@ export const ThemeSwapper = () => {
 
 	const handleClick = useCallback(() => {
 		if (!document.body.getAttribute('data-theme')) {
-			document.body.setAttribute('data-theme', systemTheme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT);
+			const theme = systemTheme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
+
+			document.body.setAttribute('data-theme', theme);
+			setButtonLabel(theme);
 		} else {
 			document.body.removeAttribute('data-theme');
+			setButtonLabel(systemTheme);
 		}
 	}, [systemTheme]);
 
 	return (
-		<button onClick={ handleClick } className={ styles.container }>
-			<SunIcon className={ classNames(styles.icon, styles.sun) } />
-			<MoonIcon className={ classNames(styles.icon, styles.moon) } />
+		<button ref={ buttonRef } onClick={ handleClick } className={ styles.container }>
+			<SunIcon aria-hidden className={ classNames(styles.icon, styles.sun) } />
+			<MoonIcon aria-hidden className={ classNames(styles.icon, styles.moon) } />
 		</button>
 	);
 };
