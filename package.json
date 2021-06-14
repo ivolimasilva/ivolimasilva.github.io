@@ -25,7 +25,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "classnames": "^2.3.1",
     "file-loader": "^6.2.0",
     "next": "^10.2.3",
     "normalize.css": "^8.0.1",
@@ -44,8 +44,8 @@
     "@moxy/postcss-preset": "^4.6.0",
     "@moxy/stylelint-config": "^9.0.0",
     "@types/react": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^4.26.1",
-    "@typescript-eslint/parser": "^4.26.1",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
     "commitlint": "^12.1.4",
     "eslint": "^7.28.0",
     "husky": "^6.0.0",
