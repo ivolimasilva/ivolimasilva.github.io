@@ -25,7 +25,3 @@ npm run dev
 # Run in production mode
 npm run build && npm run start
 ```
-
-## Plan
-
-Head over to [What's left?](https://github.com/ivolimasilva/ivolimasilva.github.io/projects/2) to check what I intend to do with this website.
