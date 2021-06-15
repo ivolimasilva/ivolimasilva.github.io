@@ -14,7 +14,7 @@ export const Avatar = (props: AvatarProps) => {
 		<div className={ classNames(styles.container, className) } { ...rest }>
 			<div className={ styles.pictureContainer }>
 				<div className={ styles.halo } />
-				<img alt="Ivo Lima Silva" src={ img } width="77" height="77" className={ styles.picture } />
+				<img alt="Ivo Lima Silva" src={ img.src } className={ styles.picture } />
 			</div>
 			<div className={ styles.infoContainer }>
 				<h1 className={ styles.name }>Ivo Lima Silva</h1>

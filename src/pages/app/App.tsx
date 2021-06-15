@@ -19,11 +19,11 @@ const App = ({ Component, pageProps }: AppProps) => {
 		<Fragment>
 			<Head>
 				<title>Ivo Lima Silva • Frontend Developer <span aria-hidden>💻</span></title>
-				<link rel="icon" href={ Favicon } type="image/x-icon" />
-				<link rel="apple-touch-icon" href={ IconApple } sizes="180x180" />
-				<link rel="icon" type="image/png" href={ Icon16 } sizes="16x16" />
-				<link rel="icon" type="image/png" href={ Icon32 } sizes="32x32" />
-				<link rel="mask-icon" href={ IconSafariPinned } />
+				<link rel="icon" href={ Favicon.src } type="image/x-icon" />
+				<link rel="apple-touch-icon" href={ IconApple.src } sizes="180x180" />
+				<link rel="icon" type="image/png" href={ Icon16.src } sizes="16x16" />
+				<link rel="icon" type="image/png" href={ Icon32.src } sizes="32x32" />
+				<link rel="mask-icon" href={ IconSafariPinned.src } />
 				<link rel="manifest" href="/manifest.webmanifest" />
 			</Head>
 			<Header />
