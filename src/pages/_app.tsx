@@ -26,7 +26,6 @@ const App = ({ Component, pageProps }: AppProps) => {
 				<link rel="icon" type="image/png" href={ Icon16.src } sizes="16x16" />
 				<link rel="icon" type="image/png" href={ Icon32.src } sizes="32x32" />
 				<link rel="mask-icon" href={ IconSafariPinned.src } />
-				<link rel="manifest" href="/manifest.webmanifest" />
 			</Head>
 			<Header />
 			<Component { ...pageProps } />
