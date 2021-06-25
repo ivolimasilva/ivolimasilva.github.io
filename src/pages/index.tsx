@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 
-import { Intro, WorkExperience, Education } from '../../components';
+import { Intro, WorkExperience, Education } from '../components';
 
-import styles from './Home.module.css';
+import styles from './index.module.css';
 
 const Home = () => (
 	<Fragment>

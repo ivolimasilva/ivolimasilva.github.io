@@ -3,12 +3,14 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import smoothscroll from 'smoothscroll-polyfill';
 
-import { Header, Footer } from '../../components';
-import Favicon from '../../media/favicons/favicon.ico';
-import IconApple from '../../media/favicons/apple-touch-icon.png';
-import IconSafariPinned from '../../media/favicons/safari-pinned-tab.svg';
-import Icon16 from '../../media/favicons/favicon-16x16.png';
-import Icon32 from '../../media/favicons/favicon-32x32.png';
+import { Header, Footer } from '../components';
+import Favicon from '../media/favicons/favicon.ico';
+import IconApple from '../media/favicons/apple-touch-icon.png';
+import IconSafariPinned from '../media/favicons/safari-pinned-tab.svg';
+import Icon16 from '../media/favicons/favicon-16x16.png';
+import Icon32 from '../media/favicons/favicon-32x32.png';
+
+import '../styles/global/index.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
 	useEffect(() => {

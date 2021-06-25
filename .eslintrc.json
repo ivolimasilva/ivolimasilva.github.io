@@ -6,6 +6,7 @@
     "node": true
 	},
 	"extends": [
+		"next",
 		"plugin:@typescript-eslint/recommended",
 		"@moxy/eslint-config-base/esm",
 		"@moxy/eslint-config-react",
