@@ -1,13 +1,9 @@
 @import "../../styles/index.css";
 
-:root {
-	--size: 1.6em;
-}
-
 .container {
 	position: relative;
-	width: var(--size);
-	height: var(--size);
+	width: 1.6rem;
+	height: 1.6rem;
 	padding: 0;
 	border: none;
 	background: transparent;

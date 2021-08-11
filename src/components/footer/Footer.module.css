@@ -1,12 +1,7 @@
 @import "../../styles/index.css";
 
-:root {
-	--padding-vertical: 15rem;
-	--size-rocket: 9.6rem;
-}
-
 .container {
-	padding: var(--padding-vertical) 0;
+	padding: 15rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,7 +14,7 @@
 }
 
 .rocket {
-	width: var(--size-rocket);
+	width: 9.6rem;
 	margin-top: 1rem;
 
 	&:hover {

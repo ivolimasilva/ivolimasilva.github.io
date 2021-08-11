@@ -1,11 +1,7 @@
 @import "../../styles/index.css";
 
-:root {
-	--padding-vertical: 15rem;
-}
-
 .container {
-	padding: var(--padding-vertical) 0;
+	padding: 15rem 0;
 	display: flex;
 }
 
@@ -28,16 +24,15 @@
 /* 75em = 120rem = max-width-layout */
 @media (width <= 75em) {
 	.container {
-		padding: var(--padding-vertical) 3rem;
+		padding-right: 3rem;
+		padding-left: 3rem;
 	}
 }
 
 @media (--layout-small) {
-	:root {
-		--padding-vertical: 5rem;
-	}
-
 	.container {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
 		flex-direction: column;
 	}
 

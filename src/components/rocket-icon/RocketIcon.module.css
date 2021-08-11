@@ -1,10 +1,5 @@
 @import "../../styles/index.css";
 
-:root {
-	--color-dark-blue: #1e247e;
-	--color-light-blue: #69aef8;
-}
-
 .st15,
 .st24 {
 	fill: var(--color-white);
