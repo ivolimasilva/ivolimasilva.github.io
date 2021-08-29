@@ -41,16 +41,16 @@
     "@moxy/eslint-config-react-web-a11y": "^13.1.0",
     "@moxy/postcss-preset": "^5.0.0",
     "@moxy/stylelint-config": "^9.0.1",
-    "@types/react": "^17.0.17",
-    "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "@typescript-eslint/parser": "^4.29.1",
+    "@types/react": "^17.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
     "commitlint": "^13.1.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.0",
-    "husky": "^7.0.1",
+    "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "postcss-flexbugs-fixes": "^5.0.2",
     "stylelint": "^13.13.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   }
 }
