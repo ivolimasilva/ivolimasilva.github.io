@@ -41,6 +41,7 @@
     "@moxy/eslint-config-react-web-a11y": "^13.1.0",
     "@moxy/postcss-preset": "^5.0.0",
     "@moxy/stylelint-config": "^9.0.1",
+    "@types/node": "^17.0.13",
     "@types/react": "^17.0.37",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
