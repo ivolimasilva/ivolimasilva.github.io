@@ -78,6 +78,16 @@ const apollo: Entity = {
 	url: 'https://www.apollographql.com/',
 };
 
+const webdriverio: Entity = {
+	name: 'WebdriverIO',
+	url: 'https://webdriver.io/',
+};
+
+const turborepo: Entity = {
+	name: 'Turborepo',
+	url: 'https://turborepo.org/',
+};
+
 const experience: ExperienceEntry[] = [
 	{
 		organization: 'Rows (previously Dashdash)',
@@ -87,9 +97,14 @@ const experience: ExperienceEntry[] = [
 			{
 				title: 'Frontend Developer',
 				description: [
-					'Building a platform that provides general purpose computing to the masses',
+					'Developed interfaces for users to manage and create spreadsheets in real time, focused on user and developer experience',
+					'Was responsible to communicate with other teams in order to avoid conflicts in development',
+					'Created guidelines and conventions to keep different teams organized',
+					'Shared knowledge to other teams in form of talks and documentation',
+					'Participated in the recruitment during technical phase',
+					'Developed automated functional and visual tests',
 				],
-				stack: [reactjs, mobx, graphql, apollo, jest, enzyme],
+				stack: [reactjs, mobx, webdriverio, graphql, apollo, jest, testingLibrary, turborepo],
 				startDate: new Date('May 11, 2020'),
 			},
 		],
