@@ -16,8 +16,4 @@
 .rocket {
 	width: 9.6rem;
 	margin-top: 1rem;
-
-	&:hover {
-		cursor: pointer;
-	}
 }

@@ -1,7 +1,7 @@
 @import "../styles/index.css";
 
 .section {
-	margin-top: 15rem;
+	margin-top: 12rem;
 }
 
 @media (--layout-small) {

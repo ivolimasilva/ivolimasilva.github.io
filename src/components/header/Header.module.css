@@ -1,7 +1,7 @@
 @import "../../styles/index.css";
 
 .container {
-	padding: 15rem 0;
+	padding: 15rem 0 12rem 0;
 	display: flex;
 }
 

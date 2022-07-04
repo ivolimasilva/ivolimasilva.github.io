@@ -48,13 +48,13 @@
 	font-size: 1.6rem;
 	font-weight: var(--font-weight-regular);
 	text-decoration: none;
+	cursor: pointer;
 	transition: opacity var(--duration-standard) ease-in-out;
 
 	&:hover,
 	&:focus,
 	&:active {
 		opacity: 0.65;
-		cursor: pointer;
 	}
 }
 

@@ -37,10 +37,8 @@
 }
 
 .phrase {
-	max-width: 75rem;
-
 	&:not(:first-child) {
-		margin-top: 1rem;
+		margin-top: 0.8rem;
 	}
 }
 

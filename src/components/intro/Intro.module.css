@@ -17,7 +17,7 @@
 	opacity: 0.85;
 }
 
-@media (--layout-small) {
+@media (--layout-medium) {
 	.tag {
 		align-self: center;
 	}
