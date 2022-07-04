@@ -95,7 +95,7 @@ const experience: ExperienceEntry[] = [
 		location: 'Porto',
 		entries: [
 			{
-				title: 'Frontend Developer',
+				title: 'Senior Frontend Developer',
 				description: [
 					'Developed interfaces for users to manage and create spreadsheets in real time, focused on user and developer experience',
 					'Was responsible to communicate with other teams in order to avoid conflicts in development',
