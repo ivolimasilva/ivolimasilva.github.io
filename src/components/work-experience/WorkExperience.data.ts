@@ -106,6 +106,7 @@ const experience: ExperienceEntry[] = [
 				],
 				stack: [reactjs, mobx, webdriverio, graphql, apollo, jest, testingLibrary, turborepo],
 				startDate: new Date('May 11, 2020'),
+				endDate: new Date('June 30, 2022'),
 			},
 		],
 	},
