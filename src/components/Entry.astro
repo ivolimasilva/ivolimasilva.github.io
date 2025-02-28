@@ -1,0 +1,36 @@
+---
+import type { Experience } from '../types';
+import Dates from './Dates.astro';
+import Link from './Link.astro';
+
+type Entry = Experience['entries'][number];
+interface Props extends Entry {}
+
+const { title, description, stack, startDate, endDate, ...rest } = Astro.props;
+---
+
+<article class="flex flex-col gap-1 not-first-of-type:mt-12">
+	<h4 class="font-bold">{title}</h4>
+	<Dates class="mb-5" from={startDate} to={endDate} />
+	{
+		description && (
+			<ul class="flex flex-col gap-1">
+				{description.map((item) => (
+					<li class="font-light">{item}</li>
+				))}
+			</ul>
+		)
+	}
+	{
+		stack && (
+			<p class="flex gap-2 text-sm font-light">
+				Stack:
+				{stack.map((technology) => (
+					<Link class="font-thin" href={technology.url}>
+						{technology.name}
+					</Link>
+				))}
+			</p>
+		)
+	}
+</article>

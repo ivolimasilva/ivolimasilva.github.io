@@ -1,4 +1,0 @@
-{
-  "*.(js|ts)x": ["eslint", "bash -c tsc --noEmit"],
-  "*.css": "stylelint"
-}

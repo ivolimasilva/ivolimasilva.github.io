@@ -1,0 +1,18 @@
+---
+import Block from './Block.astro';
+import Entry from './Entry.astro';
+import Section from './Section.astro';
+import { jobs } from '../data/jobs';
+---
+
+<Section title="Experience" class="gap-12">
+	{
+		jobs.map((job) => (
+			<Block {...job.organization}>
+				{job.entries.map((entry) => (
+					<Entry {...entry} />
+				))}
+			</Block>
+		))
+	}
+</Section>

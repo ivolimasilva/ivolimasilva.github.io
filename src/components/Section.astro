@@ -1,0 +1,16 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'section'> {
+	title: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<section class="flex flex-col gap-5">
+	<h2 class="text-sm font-bold uppercase">{Astro.props.title}</h2>
+	<div class:list={['flex flex-col', className]}>
+		<slot />
+	</div>
+</section>

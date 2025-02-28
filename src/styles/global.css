@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+@theme {
+	--container-7xl: min(80rem, 90vw);
+}
