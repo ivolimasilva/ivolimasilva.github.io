@@ -12,6 +12,6 @@ interface ExperienceEntry {
 		description: string[];
 		stack?: Entity[];
 		startDate: Date;
-		endDate?: Date;
+		endDate: Date;
 	}[]
 }

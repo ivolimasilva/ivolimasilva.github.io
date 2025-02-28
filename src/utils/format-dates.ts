@@ -1,31 +1,52 @@
-const NUMBER_OF_MS_IN_A_DAY = 1000 * 3600 * 24;
-const NUMBER_OF_DAYS_IN_A_MONTH = 30;
+/**
+ * Formats a date range with month abbreviations and year shorthand,
+ * including the duration in years and months.
+ *
+ * @param {Date} from - Start date.
+ * @param {Date} to - End date.
+ * @returns {string} Formatted date range with duration.
+ */
+function formatDate(from: Date, to: Date): string {
+	// Make sure dates are valid
+	if (!(from instanceof Date) || !(to instanceof Date) || Number.isNaN(from.getTime()) || Number.isNaN(to.getTime())) {
+		throw new Error('Invalid date input');
+	}
 
-const formatDates = (start, end) => {
-	const startString = start.toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
-	const endString = end ? end.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : 'current';
+	// Extract month names and years
+	const months: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	const fromMonth: string = months[from.getMonth()];
+	const toMonth: string = months[to.getMonth()];
 
-	end = end || new Date();
+	// Format years as 2-digit
+	const fromYear: string = from.getFullYear().toString().slice(-2);
+	const toYear: string = to.getFullYear().toString().slice(-2);
 
-	const diff = Math.round((end.getTime() - start.getTime()) / NUMBER_OF_MS_IN_A_DAY / NUMBER_OF_DAYS_IN_A_MONTH);
-	const years = Math.floor(diff / 12);
-	const months = diff % 12;
+	// Calculate duration
+	const yearDiff: number = to.getFullYear() - from.getFullYear();
+	const monthDiff: number = to.getMonth() - from.getMonth() + 1; // +1 to make it inclusive
 
-	let duration = '';
+	// Calculate total months for cases where we need to adjust
+	const totalMonths: number = (yearDiff * 12) + monthDiff;
 
-	if (years > 0) {
-		duration += `${years} years`;
+	// Calculate years and remaining months
+	const durationYears: number = Math.floor(totalMonths / 12);
+	const durationMonths: number = totalMonths % 12;
 
-		if (months > 0) {
-			duration += ', ';
+	// Format the duration string
+	let durationStr = '';
+
+	if (durationYears > 0) {
+		durationStr += `${durationYears} year${durationYears !== 1 ? 's' : ''}`;
+
+		if (durationMonths > 0) {
+			durationStr += `, ${durationMonths} month${durationMonths !== 1 ? 's' : ''}`;
 		}
+	} else {
+		durationStr = `${durationMonths} month${durationMonths !== 1 ? 's' : ''}`;
 	}
 
-	if (months > 0) {
-		duration += `${months} months`;
-	}
+	// Format the final string
+	return `${fromMonth} ${fromYear} - ${toMonth} ${toYear} (${durationStr})`;
+}
 
-	return `${startString} - ${endString} (${duration})`;
-};
-
-export default formatDates;
+export default formatDate;

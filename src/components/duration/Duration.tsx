@@ -4,7 +4,7 @@ import styles from './Duration.module.css';
 
 interface DurationProps {
   start: Date;
-  end?: Date;
+  end: Date;
 }
 
 export const Duration = ({ start, end }: DurationProps) => (
