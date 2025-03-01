@@ -1,5 +1,19 @@
 @import 'tailwindcss';
 
+@custom-variant dark {
+	/* Explicit dark: when data-theme="dark" is set */
+	&:where([data-theme="dark"], [data-theme="dark"] *) {
+		@slot;
+	}
+
+	/* Auto dark: when data-theme="auto" and the system prefers dark mode */
+	@media (prefers-color-scheme: dark) {
+		&:where([data-theme="auto"], [data-theme="auto"] *) {
+			@slot;
+		}
+	}
+}
+
 @theme {
 	--container-7xl: min(80rem, 90vw);
 }

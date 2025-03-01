@@ -6,13 +6,14 @@ import Experience from '../components/Experience.astro';
 import Header from '../components/Header.astro';
 ---
 
-<html>
+<html data-theme="auto">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width">
 		<link rel="icon" href="https://fav.farm/🧑‍💻" />
 		<title>Ivo Lima Silva • Developer 💻</title>
 	</head>
-	<body class="mx-auto flex max-w-7xl flex-col gap-32 py-36">
+	<body class="mx-auto flex max-w-7xl flex-col gap-24 lg:gap-32 lg:py-36 py-24 bg-gradient-to-br from-indigo-50 to-slate-50 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-800 dark:text-indigo-100 transition-colors duration-300">
 		<Header />
 		<About />
 		<Experience />

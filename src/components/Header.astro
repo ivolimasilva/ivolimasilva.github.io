@@ -1,16 +1,17 @@
 ---
 import Avatar from './Avatar.astro';
 import Link from './Link.astro';
+import ThemeToggle from './ThemeToggle.astro';
 import { links } from '../data/links';
 ---
 
 <header class="flex flex-col items-center gap-4 lg:flex-row">
 	<Avatar />
-	<div>
-		<h1 class="text-xl font-bold">Ivo Lima Silva</h1>
-		<h2>Software Developer</h2>
+	<div class="flex flex-col items-center lg:items-start">
+		<h1 class="text-2xl lg:text-xl font-bold">Ivo Lima Silva</h1>
+		<h2 class="text-l lg:text-md">Software Developer</h2>
 	</div>
-	<nav class="ml-auto flex gap-6">
+	<nav class="lg:ml-auto flex gap-6 items-center">
 		{
 			links.map((link) => (
 				<Link href={link.url} target="_blank" rel="noopener noreferrer">
@@ -18,5 +19,6 @@ import { links } from '../data/links';
 				</Link>
 			))
 		}
+		<ThemeToggle />
 	</nav>
 </header>

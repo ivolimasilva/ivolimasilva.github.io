@@ -23,7 +23,7 @@ const { title, description, stack, startDate, endDate, ...rest } = Astro.props;
 	}
 	{
 		stack && (
-			<p class="flex gap-2 text-sm font-light">
+			<p class="flex flex-wrap gap-2 text-sm font-light">
 				Stack:
 				{stack.map((technology) => (
 					<Link class="font-thin" href={technology.url}>
