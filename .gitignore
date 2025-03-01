@@ -14,7 +14,7 @@ pnpm-debug.log*
 dist/
 
 ## Astro
-.astro/
+
 
 # Editors
 
