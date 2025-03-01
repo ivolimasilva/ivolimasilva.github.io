@@ -1,0 +1,13 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import formatDate from '../utils/format-date';
+
+interface Props extends HTMLAttributes<'p'> {
+	from: Date;
+	to: Date;
+}
+
+const { from, to, class: className, ...rest } = Astro.props;
+---
+
+<p class:list={['text-sm font-thin', className]} {...rest}>{formatDate(from, to)}</p>

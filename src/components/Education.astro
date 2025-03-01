@@ -1,0 +1,12 @@
+---
+import Block from './Block.astro';
+import Entry from './Entry.astro';
+import Section from '../components/Section.astro';
+import { education } from '../data/education';
+---
+
+<Section title="Education">
+	<Block {...education.organization}>
+		{education.entries.map((entry) => <Entry {...entry} />)}
+	</Block>
+</Section>

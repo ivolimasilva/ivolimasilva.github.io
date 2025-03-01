@@ -17,11 +17,11 @@ To run it locally, simply clone the repository and use the following commands:
 
 ```bash
 # Install dependencies
-npm i
+bun i
 
 # Run in development mode
-npm run dev
+bun run dev
 
 # Run in production mode
-npm run build && npm run start
+bun run build && bun run start
 ```

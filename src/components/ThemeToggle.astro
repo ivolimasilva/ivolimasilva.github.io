@@ -1,0 +1,30 @@
+---
+import { Sun, Moon } from 'lucide-astro';
+---
+
+<style>
+	[aria-hidden] {
+		color: --alpha(currentColor / 60%);
+	}
+</style>
+
+<button id='theme-toggle' class='relative h-4 w-4 cursor-pointer *:absolute *:inset-0 *:h-full *:w-full *:pointer-events-none'>
+	<Sun aria-hidden class='dark:hidden block' />
+	<Moon aria-hidden class='hidden dark:block' />
+</button>
+
+<script>
+	const order = ['light', 'dark'];
+	const button = document.getElementById('theme-toggle');
+
+	if (button) {
+		button.addEventListener('click', () => {
+			const current = document.documentElement.getAttribute('data-theme');
+
+			if (current) {
+				const next = order[(order.indexOf(current) + 1) % order.length];
+				document.documentElement.setAttribute('data-theme', next);
+			}
+		});
+	}
+</script>
