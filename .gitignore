@@ -10,6 +10,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+## Output
+dist/
+
+## Astro
+.astro/
+
 # Editors
 
 ## Zed
