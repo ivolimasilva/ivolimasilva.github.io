@@ -2,7 +2,6 @@
 import type { HTMLAttributes } from 'astro/types';
 import type { Organization } from '../types';
 import Location from './Location.astro';
-import Link from './Link.astro';
 
 interface Props extends Organization, HTMLAttributes<'div'> {}
 
@@ -11,11 +10,11 @@ const { name, url, location, class: className, ...rest } = Astro.props;
 
 <div {...rest} class:list={['flex flex-col', className]}>
 	<div class="mb-3 flex items-center gap-2">
-		<Link href={url}>
+		<a href={url} target="_blank" rel="noopener noreferrer">
 			<h3 class="text-xl">
 				{name}
 			</h3>
-		</Link>
+		</a>
 		<Location>{location}</Location>
 	</div>
 	<slot />

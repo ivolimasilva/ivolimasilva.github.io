@@ -53,6 +53,7 @@ export const jobs: Experience[] = [
 					'Developed interfaces for users to manage and create spreadsheets in real time, focused on user and developer experience',
 					'Was responsible to communicate with other teams in order to avoid conflicts in development',
 					"Created guidelines and conventions to keep different teams' output consistent",
+					'In an internal hackathon, developed a <a href="https://youtu.be/srXlBKqwlPI">proof-of-concept spreadsheet editor based on WebGL</a>',
 					'Shared knowledge to other teams in form of talks and documentation',
 					'Participated in the recruitment during technical phase',
 					'Developed automated functional and visual tests',

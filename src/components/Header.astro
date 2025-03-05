@@ -1,6 +1,5 @@
 ---
 import Avatar from './Avatar.astro';
-import Link from './Link.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import { links } from '../data/links';
 ---
@@ -14,9 +13,9 @@ import { links } from '../data/links';
 	<nav class="lg:ml-auto flex gap-6 items-center">
 		{
 			links.map((link) => (
-				<Link href={link.url} target="_blank" rel="noopener noreferrer">
+				<a href={link.url} target="_blank" rel="noopener noreferrer">
 					{link.name}
-				</Link>
+				</a>
 			))
 		}
 		<ThemeToggle />

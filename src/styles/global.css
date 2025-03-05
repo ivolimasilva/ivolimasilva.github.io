@@ -17,3 +17,29 @@
 @theme {
 	--container-7xl: min(80rem, 90vw);
 }
+
+a {
+	position: relative;
+	color: --alpha(currentColor / 60%);
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0.1rem;
+		bottom: 0;
+		left: 0.1rem;
+		height: 0.1rem;
+		transform: scale(0);
+		transform-origin: left;
+		background-color: currentColor;
+		transition-property: transform;
+		transition-timing-function: ease-in-out;
+		transition-duration: 300ms;
+	}
+
+	&:hover::after,
+	&:focus::after,
+	&:active::after {
+		transform: scale(1);
+	}
+}
