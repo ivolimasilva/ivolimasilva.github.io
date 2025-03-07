@@ -6,14 +6,19 @@ import Experience from '../components/Experience.astro';
 import Header from '../components/Header.astro';
 ---
 
-<html data-theme="auto">
+<html lang="en" data-theme="auto">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" href="https://fav.farm/🧑‍💻" />
 		<title>Ivo Lima Silva • Developer 💻</title>
+		<meta
+			name="description"
+			content="Ivo is a Fullstack Developer, previously at Motion. Lifelong learner pursuing a career in Product Development. Interested in Programming, UI/UX, 3D and Photography."
+		/>
 	</head>
-	<body class="mx-auto flex max-w-7xl flex-col gap-24 lg:gap-32 lg:py-36 py-24 bg-gradient-to-br from-indigo-50 to-slate-50 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-800 dark:text-indigo-100 transition-colors duration-300">
+	<body
+		class="mx-auto flex max-w-7xl flex-col gap-24 bg-gradient-to-br from-indigo-50 to-slate-50 py-24 transition-colors duration-300 lg:gap-32 lg:py-36 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-800 dark:text-indigo-100">
 		<Header />
 		<About />
 		<Experience />

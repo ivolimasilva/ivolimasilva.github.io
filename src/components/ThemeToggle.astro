@@ -8,9 +8,12 @@ import { Sun, Moon } from 'lucide-astro';
 	}
 </style>
 
-<button id='theme-toggle' class='relative h-4 w-4 cursor-pointer *:absolute *:inset-0 *:h-full *:w-full *:pointer-events-none'>
-	<Sun aria-hidden class='dark:hidden block' />
-	<Moon aria-hidden class='hidden dark:block' />
+<button
+	id="theme-toggle"
+	aria-label="Toogle theme"
+	class="relative h-4 w-4 cursor-pointer *:pointer-events-none *:absolute *:inset-0 *:h-full *:w-full">
+	<Sun aria-hidden class="block dark:hidden" />
+	<Moon aria-hidden class="hidden dark:block" />
 </button>
 
 <script>
