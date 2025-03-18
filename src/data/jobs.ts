@@ -22,6 +22,10 @@ import {
 	webdriverio,
 	zustand,
 	radix,
+	azure,
+	cloudflareWorkers,
+	gcp,
+	vercel,
 } from './technologies';
 
 export const jobs: Experience[] = [
@@ -38,7 +42,7 @@ export const jobs: Experience[] = [
 					'Established quality assurance framework with E2E tests covering mission-critical workflows',
 					'Contributed to organizational strategy by team formation and process implementation decisions',
 				],
-				stack: [reactjs, graphql, apollo, nextjs, playwright, mongodb, zustand, radix, turborepo],
+				stack: [reactjs, graphql, apollo, nextjs, playwright, mongodb, zustand, radix, turborepo, azure, cloudflareWorkers],
 				startDate: new Date('September 2022'),
 				endDate: new Date('December 2024'),
 			},
@@ -58,7 +62,7 @@ export const jobs: Experience[] = [
 					'Participated in the recruitment during technical phase',
 					'Developed automated functional and visual tests',
 				],
-				stack: [reactjs, mobx, webdriverio, graphql, apollo, jest, testingLibrary, turborepo],
+				stack: [reactjs, mobx, webdriverio, graphql, apollo, jest, testingLibrary, turborepo, gcp],
 				startDate: new Date('May 2020'),
 				endDate: new Date('June 2022'),
 			},
@@ -75,7 +79,7 @@ export const jobs: Experience[] = [
 					'Directly contacted with clients bridging the development team and the their needs',
 					'Participated in the recruitment during technical phase',
 				],
-				stack: [reactjs, redux, nextjs, nodejs, jest, testingLibrary, threejs],
+				stack: [reactjs, redux, nextjs, nodejs, jest, testingLibrary, threejs, gcp, vercel],
 				startDate: new Date('Jun 2019'),
 				endDate: new Date('February 2020'),
 			},

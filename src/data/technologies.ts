@@ -109,3 +109,23 @@ export const radix: Entity = {
 	name: 'Radix UI',
 	url: 'https://www.radix-ui.com/',
 };
+
+export const gcp: Entity = {
+	name: 'Google Cloud Platform',
+	url: 'https://cloud.google.com/',
+};
+
+export const azure: Entity = {
+	name: 'Microsoft Azure',
+	url: 'https://azure.microsoft.com/',
+};
+
+export const cloudflareWorkers: Entity = {
+	name: 'Cloudflare Workers',
+	url: 'https://workers.cloudflare.com/',
+};
+
+export const vercel: Entity = {
+	name: 'Vercel',
+	url: 'https://vercel.com/',
+};
