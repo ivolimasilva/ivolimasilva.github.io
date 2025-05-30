@@ -100,6 +100,16 @@ export const mongodb: Entity = {
 	url: 'https://www.mongodb.com/',
 };
 
+export const googleSpanner: Entity = {
+	name: 'Google Spanner',
+	url: 'https://cloud.google.com/spanner',
+};
+
+export const typescript: Entity = {
+	name: 'TypeScript',
+	url: 'https://www.typescriptlang.org/',
+};
+
 export const zustand: Entity = {
 	name: 'Zustand',
 	url: 'https://github.com/pmndrs/zustand',

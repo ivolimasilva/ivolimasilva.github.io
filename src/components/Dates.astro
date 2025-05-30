@@ -4,7 +4,7 @@ import formatDate from '../utils/format-date';
 
 interface Props extends HTMLAttributes<'p'> {
 	from: Date;
-	to: Date;
+	to?: Date;
 }
 
 const { from, to, class: className, ...rest } = Astro.props;

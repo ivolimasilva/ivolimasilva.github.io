@@ -8,9 +8,9 @@ interface Props extends Entry {}
 const { title, description, stack, startDate, endDate, ...rest } = Astro.props;
 ---
 
-<article class="flex flex-col gap-1 not-first-of-type:mt-12">
+<article class="flex flex-col gap-1 not-first-of-type:mt-12" {...rest}>
 	<h4 class="font-bold">{title}</h4>
-	<Dates class="mb-5" from={startDate} to={endDate} />
+	<Dates class:list={description ? 'mb-5' : 'mb-2'} from={startDate} to={endDate} />
 	{
 		description && (
 			<ul class="flex flex-col gap-1">

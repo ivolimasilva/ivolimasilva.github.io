@@ -1,9 +1,13 @@
 import type { Experience } from '../types';
 import {
 	apollo,
+	azure,
 	bash,
+	cloudflareWorkers,
 	enzyme,
 	fastlane,
+	gcp,
+	googleSpanner,
 	graphql,
 	jenkins,
 	jest,
@@ -12,6 +16,7 @@ import {
 	nextjs,
 	nodejs,
 	playwright,
+	radix,
 	reactjs,
 	redux,
 	ruby,
@@ -19,30 +24,37 @@ import {
 	testingLibrary,
 	threejs,
 	turborepo,
+	typescript,
+	vercel,
 	webdriverio,
 	zustand,
-	radix,
-	azure,
-	cloudflareWorkers,
-	gcp,
-	vercel,
 } from './technologies';
 
 export const jobs: Experience[] = [
+	{
+		organization: { name: 'Attio', url: 'https://attio.com/', location: 'Remote' },
+		entries: [
+			{
+				title: 'Senior Product Engineer',
+				stack: [typescript, reactjs, radix, gcp, googleSpanner],
+				startDate: new Date('May 2025'),
+			},
+		],
+	},
 	{
 		organization: { name: 'Motion', url: 'https://motionapp.com/', location: 'Remote' },
 		entries: [
 			{
 				title: 'Lead frontend developer & Engineering Manager',
 				description: [
-					'Led as the first senior front-end developer, establishing technical standards and practices',
-					'Alongside the designer, created a design system unique to the brand and implemented it across the product',
+					'Joined as the first senior front-end developer, establishing technical standards and practices',
+					'Worked alongside the designer to create a design system unique to the brand and implemented it across the product',
 					'Built, managed and scaled the team in regards to frontend development',
 					'Delivered full-stack features encompassing UI development, database integration, and external APIs',
 					'Established quality assurance framework with E2E tests covering mission-critical workflows',
 					'Contributed to organizational strategy by team formation and process implementation decisions',
 				],
-				stack: [reactjs, graphql, apollo, nextjs, playwright, mongodb, zustand, radix, turborepo, azure, cloudflareWorkers],
+				stack: [typescript, reactjs, graphql, apollo, nextjs, playwright, mongodb, zustand, radix, turborepo, azure, cloudflareWorkers],
 				startDate: new Date('September 2022'),
 				endDate: new Date('December 2024'),
 			},
@@ -62,7 +74,7 @@ export const jobs: Experience[] = [
 					'Participated in the recruitment during technical phase',
 					'Developed automated functional and visual tests',
 				],
-				stack: [reactjs, mobx, webdriverio, graphql, apollo, jest, testingLibrary, turborepo, gcp],
+				stack: [typescript, reactjs, mobx, webdriverio, graphql, apollo, jest, testingLibrary, turborepo, gcp],
 				startDate: new Date('May 2020'),
 				endDate: new Date('June 2022'),
 			},
