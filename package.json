@@ -13,24 +13,25 @@
 		"url": "git+https://github.com/ivolimasilva/ivolimasilva.github.io.git"
 	},
 	"type": "module",
-	"packageManager": "bun@1.2.13",
+	"packageManager": "bun@1.2.15",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
 		"clean": "rm -rf node_modules && rm -rf dist",
-		"format": "prettier . --write"
+		"format": "prettier ."
 	},
 	"dependencies": {
-		"astro": "^5.7.13",
+		"@astrojs/vercel": "^8.1.4",
+		"astro": "^5.8.1",
 		"lucide-astro": "^0.511.0",
-		"tailwindcss": "^4.1.7"
+		"tailwindcss": "^4.1.8"
 	},
 	"devDependencies": {
-		"@tailwindcss/vite": "^4.1.7",
+		"@tailwindcss/vite": "^4.1.8",
 		"prettier": "^3.5.3",
 		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-tailwindcss": "^0.6.11"
+		"prettier-plugin-tailwindcss": "^0.6.12"
 	},
 	"trustedDependencies": [
 		"@tailwindcss/oxide"
