@@ -6,7 +6,7 @@
  * @param {Date} [to = new Date()] - End date
  * @returns {string} Formatted date range with duration
  */
-function formatDate(from: Date, to: Date): string {
+function formatDate(from: Date, to?: Date): string {
 	// Make sure dates are valid
 	if (!(from instanceof Date) || Number.isNaN(from.getTime()) || (!!to && !(to instanceof Date)) || (!!to && Number.isNaN(to.getTime()))) {
 		throw new Error('Invalid date input');

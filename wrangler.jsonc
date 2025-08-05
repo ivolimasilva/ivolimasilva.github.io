@@ -1,0 +1,14 @@
+{
+	"$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
+	"name": "ivolimasilva-worker",
+	"main": "./dist/_worker.js/index.js",
+	"compatibility_date": "2025-08-05",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist",
+	},
+	"observability": {
+		"enabled": true,
+	},
+}

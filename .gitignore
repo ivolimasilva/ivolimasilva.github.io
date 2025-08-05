@@ -16,6 +16,10 @@ dist/
 ## Astro
 .astro/
 
+## Wrangler
+worker-configuration.d.ts
+.wrangler
+
 # Editors
 
 ## Zed
